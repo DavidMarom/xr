@@ -9,6 +9,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "ibm";
+  src: url("../../public/fonts/IBMPlexSerif-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --sidebarClr: #ffffff;
   --text-dark: #1d1d1b;
@@ -44,16 +51,18 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
-  font-weight: 300;
+  font-size: 3rem;
+  font-weight: 200;
   margin-top: 0px;
   margin-bottom: 1rem;
   color: var(--text-grey);
-  font-family: "prata", sans-serif;
+  font-family: "ibm", sans-serif;
 }
 
 h3 {
   font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-dark);
 }
 
 .center {
@@ -76,12 +85,27 @@ h3 {
   height: 100%;
 }
 
+.w100 {
+  width: 100%;
+}
+
 .w300px {
   width: 300px;
 }
 
-.wrapper{
+.wrapper {
   max-width: 1400px;
   margin: 0 auto;
+}
 
+.card {
+  border: 1px solid var(--border);
+}
+
+.padding2 {
+  padding: 2rem;
+}
+
+.vspace {
+  margin-top: 3rem;
 }
