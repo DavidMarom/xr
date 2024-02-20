@@ -18,6 +18,12 @@ export async function getAllDocuments(client: any, collection: string) {
     return documents;
 }
 
+export async function getDocumentsByFilter(client: any, collection: string, filter: object) {
+    const db = client.db('rb');
+    const documents = await db.collection(collection).find(filter).toArray();
+    return documents;
+}
+
 export async function updateDocument(client: any, collection: string, id: string, update: object) {
     const db = client.db('xr');
     try {
