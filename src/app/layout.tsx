@@ -1,18 +1,29 @@
 "use client";
 
-import { Inter } from "next/font/google";
 import { Sidebar, Bar } from "@/components";
 import { FiArrowLeft } from "react-icons/fi";
-import { getEvents } from "@/services/events";
+import { getEvents, postEvents } from "@/services/events";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-
 console.log('aaa')
-getEvents().then(
-  (res) => { console.log(res) }
-);
 
+postEvents([
+  {
+    timestamp: new Date().getTime(),
+    page: "aaa",
+    entity_id: "bbb",
+    event_type: "ccc",
+    data: { 'a': 'b' },
+  },
+  {
+    timestamp: new Date().getTime(),
+    page: "aaa",
+    entity_id: "bbb",
+    event_type: "ccc",
+    data: { 'a': 'b' },
+  },
+
+])
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (

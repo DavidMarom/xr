@@ -4,11 +4,7 @@ export const getEvents = () => {
     return http.get("/events");
 };
 
-export const getEvent = (id: string) => {
-    return http.get(`/events/${id}`);
-};
-
-export const createEvent = (data: any) => {
+export const postEvents = (data: Array<object>) => {
     return http.post("/events", data);
-};
+}
 

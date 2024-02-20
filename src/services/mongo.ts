@@ -12,6 +12,12 @@ export async function insertDocument(client: any, collection: string, document: 
     return result;
 }
 
+export async function insertDocuments(client: any, collection: string, documents: object[]) {
+    const db = client.db('xr');
+    const result = await db.collection(collection).insertMany(documents);
+    return result;
+}
+
 export async function getAllDocuments(client: any, collection: string) {
     const db = client.db('xr');
     const documents = await db.collection(collection).find().toArray();
