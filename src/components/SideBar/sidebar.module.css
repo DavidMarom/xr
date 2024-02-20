@@ -6,12 +6,9 @@
   min-width: 240px;
   height: calc(100vh - 80px);
   background-color: var(--sidebarClr);
-  padding-top: 60px;
+  padding-top: 40px;
+  padding-left: 20px;
   border-right: 1px solid var(--grey_01);
-}
-
-.containermobile {
-  display: none;
 }
 
 .sidebarbtn {

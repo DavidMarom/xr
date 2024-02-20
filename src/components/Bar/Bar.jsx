@@ -12,10 +12,7 @@ export default function Bar({
 
     return (
         <StyleSheetManager shouldForwardProp={(prop) => prop !== 'margintop'}>
-            <BarContainer
-                margintop={margintop}
-
-            >
+            <BarContainer margintop={margintop}>
                 {children}
             </BarContainer>
         </StyleSheetManager >
