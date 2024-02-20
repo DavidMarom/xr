@@ -1,5 +1,4 @@
 import styles from "./page.module.css";
-import 'blazing-layout'
 
 
 export default function Home() {
