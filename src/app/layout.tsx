@@ -16,7 +16,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="wrapper">
+        
         <Bar>
           <div className="rbc h100">
             <div className="rac w300px">
