@@ -12,9 +12,9 @@ export const transmitEvent = (event: any) => {
 
     // post the event stack only if 10 seconds have passed since the last post to server
     if (new Date().getTime() - lastTransmitted > 10000) {
-        console.log("========================");
-        console.log("Posting event to server: ");
-        console.log("========================");
+        console.log("=========================");
+        console.log("Posting events to server: ");
+        console.log("=========================");
         console.log(getUserActivityStack());
 
         postEvents(getUserActivityStack());

@@ -33,7 +33,7 @@ export default function Home() {
 
   return (
     <div id={PAGE_NAME} className="page-container">
-      <h2>Brand Book 2</h2>
+      <h2>Page 02</h2>
 
       <button onClick={recordEvent01}>Click me</button>
 
@@ -44,7 +44,7 @@ export default function Home() {
         And God said, Let there be light, and there was light. And God saw that the light was good.
         So God created man in his own image
       </p>
-      <img src="/images/img01.jpg" alt="Heusen" width="100%" />
+      <img src="/images/page02-hero.jpg" alt="Heusen" width="100%" />
       <p className="vspace">
         So God created man in his own image, in the image of God he created him; male and female he created them.
         And God said, Let there be light, and there was light. And God saw that the light was good.</p>

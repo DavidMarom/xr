@@ -15,6 +15,7 @@ function SideBar() {
           </div>
         </div>
       </Link>
+
       <Link href="/Page02">
         <div className={styles.sidebarbtn}>
           <div className={styles.sidebarbtnwrapper}>
@@ -22,6 +23,15 @@ function SideBar() {
           </div>
         </div>
       </Link>
+
+      <Link href="/Dbinspect">
+        <div className={styles.sidebarbtn}>
+          <div className={styles.sidebarbtnwrapper}>
+            <span>DB Inspection</span>
+          </div>
+        </div>
+      </Link>
+
       </div>
 
     </>
