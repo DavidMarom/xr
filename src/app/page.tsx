@@ -7,6 +7,7 @@ import { getFromStorage, setToStorage } from "@/services/utils";
 const PAGE_NAME = "Brand Book";
 const recordEvent01 = () => { transmitEvent({ page: PAGE_NAME, entity_id: "button", event_type: "click", data: { 'button text': 'Click me' } }) }
 const recordEvent02 = () => { transmitEvent({ page: PAGE_NAME, entity_id: "page", event_type: "scroll", data: {} }) }
+const recordEventPageLoad = () => { transmitEvent({ page: PAGE_NAME, entity_id: "page", event_type: "load", data: {} }) }
 
 export default function Home() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -23,6 +24,8 @@ export default function Home() {
     }
 
     const divElement = document.getElementById(PAGE_NAME);
+    recordEventPageLoad();
+
     if (divElement) {
       divElement.addEventListener('scroll', updateScrollPosition)
       return () => { divElement.removeEventListener('scroll', updateScrollPosition) }

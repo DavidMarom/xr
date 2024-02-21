@@ -28,34 +28,7 @@
   padding-left: 0px;
   color: var(--text-dark);
   padding-left: 20px;
-}
-
-@media (max-width: 768px) {
-  .container {
-    display: none;
-  }
-
-  .sidebarbtn {
-    margin: 0px;
-    padding: 15px;
-  }
-
-  .sidebarbtn:hover {
-    background-color: var(--primary_050);
-    padding-left: 15px;
-  }
-
-  .containermobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-    min-width: 60px;
-    height: auto;
-    background-color: var(--primary_200);
-    padding-top: 20px;
-    margin-right: 20px;
-  }
+  text-decoration: none;
 }
 
 .sidebarbtnwrapper {
@@ -63,6 +36,7 @@
   display: flex;
   width: 70%;
   flex-direction: row;
+  text-decoration: none;
 }
 
 .sidebartxt {

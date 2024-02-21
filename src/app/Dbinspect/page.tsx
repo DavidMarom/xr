@@ -2,8 +2,6 @@
 import { getEvents, clearEvents } from "@/services/events";
 
 export default function Home() {
-  // getEvents().then((response) => { console.log(response.data) })
-
   return (
     <div className="page-container">
       <h2>DB Inspection</h2>
