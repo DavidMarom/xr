@@ -9,6 +9,7 @@ const useEventStackStore = create((set) => ({
 
 export const getUserActivityStack = () => useEventStackStore.getState().userActivity;
 export const addUserActivity = (activity) => useEventStackStore.getState().addActivity(activity);
+export const clearUserActivityStack = () => useEventStackStore.getState().clearActivityStack();
 
 export default useEventStackStore;
 

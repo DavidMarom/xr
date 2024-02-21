@@ -1,7 +1,7 @@
 "use client";
-
-import styles from "./page.module.css";
 import { transmitEvent } from "@/services/transmitter";
+
+const recordEvent01 = () => { transmitEvent({ timestamp: new Date().getTime(), page: "page1", entity_id: "button", event_type: "click", data: { 'button text': 'Click me' }, }) }
 
 
 export default function Home() {
@@ -9,15 +9,7 @@ export default function Home() {
     <div className="page-container">
       <h2>Brand Book</h2>
 
-      <button onClick={() => {
-        transmitEvent({
-          timestamp: new Date().getTime(),
-          page: "page1",
-          entity_id: "button",
-          event_type: "click",
-          data: { 'button text': 'Click me' },
-        });
-      }}>Click me</button>
+      <button onClick={recordEvent01}>Click me</button>
 
       <p>
         So God created man in his own image, in the image of God he created him; male and female he created them.
@@ -36,11 +28,11 @@ export default function Home() {
           <img src="/images/img02.jpg" alt="Heusen" width="50%" />
           <div className="w100 padding2">
 
-          <h3>VAN HEUSEN LOOK BOOK</h3>
-          <p>With a strong foundation in men's fashion, Van Heusen has expanded into brands. in the U.S also after</p>
+            <h3>VAN HEUSEN LOOK BOOK</h3>
+            <p>With a strong foundation in men's fashion, Van Heusen has expanded into brands. in the U.S also after</p>
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }

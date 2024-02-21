@@ -5,6 +5,7 @@ import { FiArrowLeft } from "react-icons/fi";
 import { transmitEvent } from "@/services/transmitter";
 import "./globals.css";
 
+localStorage.setItem("lastTransmitted", new Date().getTime().toString());
 
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
