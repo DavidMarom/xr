@@ -2,7 +2,7 @@
 
 import { Sidebar, Bar } from "@/components";
 import { FiArrowLeft } from "react-icons/fi";
-import { getEvents, postEvents } from "@/services/events";
+import { postEvents } from "@/services/events";
 import "./globals.css";
 
 console.log('aaa')
