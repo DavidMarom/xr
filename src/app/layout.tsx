@@ -2,27 +2,10 @@
 
 import { Sidebar, Bar } from "@/components";
 import { FiArrowLeft } from "react-icons/fi";
-import { postEvents } from "@/services/events";
+import { transmitEvent } from "@/services/transmitter";
 import "./globals.css";
 
-console.log('aaa')
 
-postEvents([
-  {
-    timestamp: new Date().getTime(),
-    page: "aaa",
-    entity_id: "bbb",
-    event_type: "ccc",
-    data: { 'a': 'b' },
-  },
-  {
-    timestamp: new Date().getTime(),
-    page: "zzz",
-    entity_id: "fff",
-    event_type: "qqq",
-    data: { 'c': 'd' },
-  },
-])
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (

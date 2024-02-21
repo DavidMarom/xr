@@ -1,14 +1,5 @@
 import { connectDatabase, insertDocuments } from "../../../services/mongo";
 
-// export async function GET() {
-//     const client = await connectDatabase();
-//     const documents = await getAllDocuments(client, 'events');
-//     client.close();
-//     return new Response(JSON.stringify(documents), {
-//         headers: { 'Content-Type': 'application/json' },
-//     });
-// }
-
 export async function POST(request: Request) {
     const client = await connectDatabase();
     const body = await request.json();

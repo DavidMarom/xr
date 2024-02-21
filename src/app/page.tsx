@@ -1,10 +1,24 @@
+"use client";
+
 import styles from "./page.module.css";
+import { transmitEvent } from "@/services/transmitter";
 
 
 export default function Home() {
   return (
     <div className="page-container">
       <h2>Brand Book</h2>
+
+      <button onClick={() => {
+        transmitEvent({
+          timestamp: new Date().getTime(),
+          page: "page1",
+          entity_id: "button",
+          event_type: "click",
+          data: { 'button text': 'Click me' },
+        });
+      }}>Click me</button>
+
       <p>
         So God created man in his own image, in the image of God he created him; male and female he created them.
         And God said, Let there be light, and there was light. And God saw that the light was good.
