@@ -19,6 +19,7 @@ export default function Home() {
   };
 
   useEffect(() => {
+    document.title = "Van Heusen";
     if (!getFromStorage("lastTransmitted")) { 
       setToStorage("lastTransmitted", new Date().getTime().toString());
     }
