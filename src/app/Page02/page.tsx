@@ -1,8 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import { transmitEvent } from "@/services/transmitter";
-import { setToStorage } from "@/services/utils";
-
 
 const PAGE_NAME = "Page 02";
 const recordEvent01 = () => { transmitEvent({ page: PAGE_NAME, entity_id: "button", event_type: "click", data: { 'button text': 'Click me' } }) }
@@ -18,8 +16,6 @@ export default function Home() {
   };
 
   useEffect(() => {
-    setToStorage("lastTransmitted", new Date().getTime().toString());
-
     const divElement = document.getElementById(PAGE_NAME);
     if (divElement) {
       divElement.addEventListener('scroll', updateScrollPosition)

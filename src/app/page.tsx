@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { transmitEvent } from "@/services/transmitter";
-import { setToStorage } from "@/services/utils";
+import { getFromStorage, setToStorage } from "@/services/utils";
 
 
 const PAGE_NAME = "Brand Book";
@@ -18,7 +18,9 @@ export default function Home() {
   };
 
   useEffect(() => {
-    setToStorage("lastTransmitted", new Date().getTime().toString());
+    if (!getFromStorage("lastTransmitted")) { 
+      setToStorage("lastTransmitted", new Date().getTime().toString());
+    }
 
     const divElement = document.getElementById(PAGE_NAME);
     if (divElement) {
