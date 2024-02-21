@@ -4,6 +4,7 @@ import { Sidebar, Bar } from "@/components";
 import { FiArrowLeft } from "react-icons/fi";
 import "./globals.css";
 
+document.title = "Van Heusen";
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
