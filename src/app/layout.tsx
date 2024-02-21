@@ -17,12 +17,11 @@ postEvents([
   },
   {
     timestamp: new Date().getTime(),
-    page: "aaa",
-    entity_id: "bbb",
-    event_type: "ccc",
-    data: { 'a': 'b' },
+    page: "zzz",
+    entity_id: "fff",
+    event_type: "qqq",
+    data: { 'c': 'd' },
   },
-
 ])
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

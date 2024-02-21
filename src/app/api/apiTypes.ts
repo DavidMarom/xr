@@ -10,4 +10,4 @@ const EventSchema = z.object(
     }
 );
 
-export type ContactGetType = z.infer<typeof EventSchema>;
+export type EventSchemaType = z.infer<typeof EventSchema>;
