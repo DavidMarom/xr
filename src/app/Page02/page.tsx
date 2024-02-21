@@ -4,7 +4,7 @@ import { transmitEvent } from "@/services/transmitter";
 import { setToStorage } from "@/services/utils";
 
 
-const PAGE_NAME = "Brand Book";
+const PAGE_NAME = "Page 02";
 const recordEvent01 = () => { transmitEvent({ page: PAGE_NAME, entity_id: "button", event_type: "click", data: { 'button text': 'Click me' } }) }
 const recordEvent02 = () => { transmitEvent({ page: PAGE_NAME, entity_id: "page", event_type: "scroll", data: {} }) }
 
@@ -37,7 +37,7 @@ export default function Home() {
 
   return (
     <div id={PAGE_NAME} className="page-container">
-      <h2>Brand Book</h2>
+      <h2>Brand Book 2</h2>
 
       <button onClick={recordEvent01}>Click me</button>
 

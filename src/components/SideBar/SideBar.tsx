@@ -7,8 +7,23 @@ function SideBar() {
   return (
     <>
       <div className={styles.container}>
-        <p>Brand Book</p>
+
+      <Link href="/">
+        <div className={styles.sidebarbtn}>
+          <div className={styles.sidebarbtnwrapper}>
+            <span>Home</span>
+          </div>
+        </div>
+      </Link>
+      <Link href="/Page02">
+        <div className={styles.sidebarbtn}>
+          <div className={styles.sidebarbtnwrapper}>
+            <span>Page 02</span>
+          </div>
+        </div>
+      </Link>
       </div>
+
     </>
   );
 }

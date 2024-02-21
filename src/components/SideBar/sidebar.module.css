@@ -1,7 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   min-width: 275px;
   height: calc(100vh - 80px);
@@ -18,18 +18,16 @@
   width: 90%;
   margin-left: -5px;
   margin-bottom: 10px;
-  background-color: var(--primary_200);
-  color: var(--secondary_200);
+  color: var(--text-dark);
   text-decoration: none;
   padding: 15px;
   transition: all 0.2s ease;
 }
 
 .sidebarbtn:hover {
-  background-color: var(--primary_050);
   padding-left: 0px;
-  color: var(--whiteClr);
-  padding-left: 35px;
+  color: var(--text-dark);
+  padding-left: 20px;
 }
 
 @media (max-width: 768px) {
